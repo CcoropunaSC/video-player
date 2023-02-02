@@ -12,7 +12,8 @@
 <body>
     <div class="player">
         <div class="wrapper">
-            <video id="video" src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="500" poster="./images/poster-iti.png"></video>
+            <video id="video" src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="500"
+                poster="./images/poster-iti.png"></video>
             <div class="player-overlay">
                 <h2 class="player-title">Inspiration TI - Video Player (Go)</h2>
                 <div class="player-actions">
@@ -21,6 +22,21 @@
                     <button class="button" id="play" aria-label="play" title="play"></button>
                     <button class="button" id="pause" aria-label="pause" title="pause" hidden></button>
                     <button class="button" id="forward" aria-label="adelantar 10 seg" title="adelantar 10 seg"></button>
+                </div>
+                <div class="player-time-info">
+                    <span class="current-time" id="currentTime">
+                        0:00
+                    </span>
+                    /
+                    <span class="end-time" id="endTime">
+                        0:00
+                    </span>
+                </div>
+                <div class="player-speaker-actions">
+                    <button class="button" id="speakerOn" aria-label="activar audio"
+                        title="activar audio"></button>
+                    <button class="button" id="speakerOff" aria-label="silenciar audio"
+                        title="silenciar audio" hidden></button>
                 </div>
                 <div class="player-progress">
                     <input id="progress" class="custom-range" type="range" value="0" min="0" max="0">

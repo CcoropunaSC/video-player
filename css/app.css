@@ -60,16 +60,46 @@ body {
     opacity: 1;
 }
 
-/* input[type=range]::-webkit-slider-runnable-track {
-    background: #06a103;
+.player-time-info {
+    color: white;
+    position: absolute;
+    inset-block-end: 25px;
+    inset-inline-start: 15px;
+}
+
+.player-speaker-actions {
+    position: absolute;
+    inset-block-end: 25px;
+    inset-inline-end: 15px;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+    background-color: #2f2e32;
     border-radius: 10px;
-    height: 10px;
+    height: 8px;
 }
 
-input[type=range]::-moz-range-track {
-    background: #06a103;
+/* Como puedo personalizar la manija de pista y marcado del avance, 
+en siguiente bloque el background no da efecto aplica*/
+
+.custom-range::-webkit-slider-thumb {
+    background-color: #767578;
+    color: #767578;
+    position: relative;
+    inset-block-end: 4px;
+    cursor: pointer;
 }
 
-input[type=range]::-ms-track {
-    background: #de6b08;
-} */
+/*
+  input[type=range]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(11, 174, 106);
+    border-radius: 10px;
+  }
+  input[type=range]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(93, 202, 25);
+    border-radius: 10px;
+  } */

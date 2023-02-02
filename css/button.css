@@ -27,3 +27,11 @@
 #forward {
     background-image: url('../images/+10.svg');
 }
+
+#speakerOn {
+    background-image: url('../images/speaker-wave.svg');
+}
+
+#speakerOff {
+    background-image: url('../images/speaker-x-mark.svg');
+}
