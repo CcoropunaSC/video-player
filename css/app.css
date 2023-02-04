@@ -73,33 +73,19 @@ body {
     inset-inline-end: 15px;
 }
 
-.custom-range::-webkit-slider-runnable-track {
+.custom-range {
+    -webkit-appearance: none;
     background-color: #2f2e32;
     border-radius: 10px;
-    height: 8px;
+    height: 5px;
+    outline: none;
+    border: none;
 }
-
-/* Como puedo personalizar la manija de pista y marcado del avance, 
-en siguiente bloque el background no da efecto aplica*/
 
 .custom-range::-webkit-slider-thumb {
-    background-color: #767578;
-    color: #767578;
-    position: relative;
-    inset-block-end: 4px;
-    cursor: pointer;
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50%;
 }
-
-/*
-  input[type=range]::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(11, 174, 106);
-    border-radius: 10px;
-  }
-  input[type=range]::-ms-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(93, 202, 25);
-    border-radius: 10px;
-  } */
